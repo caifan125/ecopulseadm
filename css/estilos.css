@@ -1,0 +1,7 @@
+table.dataTable.hover tbody tr.selected, table.dataTable.display tbody tr.selected {
+    background-color: #aab7d1;
+}
+
+#infoBaja{
+    font-weight: bold;
+}

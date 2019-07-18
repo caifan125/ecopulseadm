@@ -58,6 +58,11 @@ $(function(){
                 action:"altaCte",
                 rfc:$("#rfc").val(),
                 nombre:$("#nombre").val(),
+                direccion:$("#direccion").val(),
+                ciudad:$("#ciudad").val(),
+                estado:$("#estado").val(),
+                email:$("#email").val(),
+                telefono:$("#telefono").val(),
                 tarjeta:$("#tarjeta").val(),
                 referencia:$("#referencia").val()
             },
@@ -73,9 +78,12 @@ $(function(){
                 var status=JSON.parse(dato);
                 
                 if(Number(status["status"])===1){
-                    $("#rfc").val("");
-                    $("#nombre").val("");
-                    $("#tarjeta").val("");
+                    $("#alta input[type=text]").val("");
+                    $("#alta input[type=email]").val("");
+                    //$("#rfc").val("");
+                    //$("#nombre").val("");
+                    $("#estado").val($("#estado").children("option:first").val()); 
+                    //$("#tarjeta").val("");
                     $("#referencia").val($("#referencia").children("option:first").val()); 
                     $("#tituloModal").text("Proceso terminado");
                 }

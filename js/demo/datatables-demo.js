@@ -43,6 +43,7 @@ $(function() {
                     $("#tituloModal").text("Error");
                     $("#mensaje").text(clientes["mensaje"]);
                 }
+                $('.accionCtes').prop("disabled",true);
                 $("#errorModal").modal("show");
 				
             },
@@ -71,7 +72,12 @@ $(function() {
         
         $("#rfc").val($(".selected td:nth-child(3)").text());
         $("#nombre").val($(".selected td:nth-child(2)").text());
-        $("#tarjeta").val($(".selected td:nth-child(4)").text());
+        $("#direccion").val($(".selected td:nth-child(4)").text());
+        $("#ciudad").val($(".selected td:nth-child(5)").text());
+        $("#estado").val($(".selected td:nth-child(6)").text());
+        $("#email").val($(".selected td:nth-child(7)").text());
+        $("#telefono").val($(".selected td:nth-child(8)").text());
+        $("#tarjeta").val($(".selected td:nth-child(9)").text());
         $("#ModalAcualizacion").modal("show");
         
     } );
@@ -87,6 +93,11 @@ $(function() {
                 id:$(".selected td:first-child").text(),
                 rfc:$("#rfc").val(),
                 nombre:$("#nombre").val(),
+                direccion:$("#direccion").val(),
+                ciudad:$("#ciudad").val(),
+                estado:$("#estado").val(),
+                email:$("#email").val(),
+                telefono:$("#telefono").val(),
                 tarjeta:$("#tarjeta").val()
             },
             method:"post",
@@ -98,6 +109,10 @@ $(function() {
                 //console.log("actualizacion:"+dato);
                 $("#esperaModal").modal("hide");
                 var actualizacion=JSON.parse(dato);
+                
+                $("#modificar input[type=text]").val("");
+                $("#modificar input[type=email]").val("");
+                $("#estado").val($("#estado").children("option:first").val());
                 
                 if(Number(actualizacion["status"])===1){
                     $("#dataTable").dataTable().fnDestroy();

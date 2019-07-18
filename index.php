@@ -92,47 +92,52 @@
         </div>
       </li>-->
 
-      <!-- Divider -->
-      <!--<hr class="sidebar-divider">-->
+      <!--Divider -->
+      <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <!--<div class="sidebar-heading">
-        Addons
-      </div>-->
+      <div class="sidebar-heading">
+        Créditos
+      </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!--<li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
+      <!-- Nav Item - alta credito -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-cash-register"></i>
+          <span>Créditos cliente</span></a>
+          
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Operaciones céditos:</h6>
+              <a class="collapse-item" href="altacredito.php">Alta crédito</a>
+              <a class="collapse-item" href="detallesCredito.php">Modificación créditos</a>
+            </div>
           </div>
-        </div>
-      </li>-->
+      </li>
 
-      <!-- Nav Item - Charts -->
-      <!--<li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>-->
+      <!-- Nav Item - pagos -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-cash-register"></i>
+          <span>Pagos</span></a>
+          
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Operaciones pagos:</h6>
+              <a class="collapse-item" href="pagos.php">Registro pagos</a>
+              <a class="collapse-item" href="cambiospagos.php">Modificacion pagos</a>
+            </div>
+          </div>
+      </li>
 
-      <!-- Nav Item - Tables -->
-      <!--<li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
+      <!-- Nav Item - estado de cuenta -->
+      
+      <li class="nav-item">
+        <a class="nav-link" href="edocta.php">
+          <i class="fas fa-fw fa-file-invoice"></i>
+          <span>Estado de cuenta</span></a>
+      </li>
 
       <!-- Divider -->
       <!--<hr class="sidebar-divider d-none d-md-block">-->

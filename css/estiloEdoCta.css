@@ -1,0 +1,67 @@
+
+
+body{
+    font-family: gilroylight;
+}
+
+.total,.cabecera{
+    overflow: hidden;
+}
+
+#direccionEcopulse{
+    font-size: 12px;
+    color: #9c9c9c;
+}
+
+#titulo,#detalleCta,.etiquetaInversion, .totalInversion{
+    text-align: center;
+}
+
+#titulo,#etiquetaInversion, #descripcion, #etiquetaLiquidar{
+    font-family: gilroybold;
+}
+
+.inversion{
+    float: right;
+    width: 50%;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+#etiquetaInversion, #detalleCta thead tr th{
+    color: white;
+    background-color: #f45131;
+}
+
+#detalleCta thead tr th{
+    width: 10%;
+    padding: 5px 0px 5px 0px;
+}
+
+#etiquetaInversion, #totalInversion{
+    width: 48%;
+    float: left;
+}
+
+#pagoTotal{
+    float: right;
+    width: 100%;
+    border-bottom: 4px double #333;
+    padding: 10px 0;
+}
+
+#etiquetaLiquidar{
+    width: 59%;
+    float: left;
+    font-size: 14px;
+    text-align: right;
+}
+
+#totalLiquidar{
+    width: 40%;
+    float: right;
+    font-size: 14px;
+    font-family: orkneylight;
+}

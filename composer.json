@@ -1,0 +1,13 @@
+{
+    "name": "vendor/ecopulseadm",
+    "description": "Description of project ecopulseadm.",
+    "authors": [
+        {
+            "name": "laptopsavant",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "v8.0.1"
+    }
+}

@@ -96,47 +96,51 @@
         </div>
       </li>-->
 
-      <!-- Divider -->
-      <!--<hr class="sidebar-divider">-->
+      <!--Divider -->
+      <hr class="sidebar-divider">
 
       <!-- Heading -->
-      <!--<div class="sidebar-heading">
-        Addons
-      </div>-->
+      <div class="sidebar-heading">
+        Créditos
+      </div>
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <!--<li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-folder"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
+      <!-- Nav Item - alta credito -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-cash-register"></i>
+          <span>Créditos cliente</span></a>
+          
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Operaciones céditos:</h6>
+              <a class="collapse-item" href="altacredito.php">Alta crédito</a>
+              <a class="collapse-item" href="detallesCredito.php">Modificación créditos</a>
+            </div>
           </div>
-        </div>
-      </li>-->
+      </li>
 
-      <!-- Nav Item - Charts -->
-      <!--<li class="nav-item">
-        <a class="nav-link" href="charts.html">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
-      </li>-->
+      <!-- Nav Item - pagos -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fas fa-fw fa-cash-register"></i>
+          <span>Pagos</span></a>
+          
+          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Operaciones pagos:</h6>
+              <a class="collapse-item" href="pagos.php">Registro pagos</a>
+              <a class="collapse-item" href="cambiospagos.php">Modificacion pagos</a>
+            </div>
+          </div>
+      </li>
 
-      <!-- Nav Item - Tables -->
-      <!--<li class="nav-item">
-        <a class="nav-link" href="tables.html">
-          <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
-      </li>-->
+      <!-- Nav Item - estado de cuenta -->
+      <li class="nav-item">
+        <a class="nav-link" href="edocta.php">
+          <i class="fas fa-fw fa-file-invoice"></i>
+          <span>Estado de cuenta</span></a>
+      </li>
 
       <!-- Divider -->
       <!--<hr class="sidebar-divider d-none d-md-block">-->
@@ -358,6 +362,11 @@
                       <th>Id</th>
                       <th>Nombre</th>
                       <th>RFC</th>
+                      <th>Dirección</th>
+                      <th>Ciudad</th>
+                      <th>Estado</th>
+                      <th>Email</th>
+                      <th>Teléfono</th>
                       <th>Tarjeta</th>
                       <th>Referencia</th>
                     </tr>
@@ -367,6 +376,11 @@
                       <th>Id</th>
                       <th>Nombre</th>
                       <th>RFC</th>
+                      <th>Dirección</th>
+                      <th>Ciudad</th>
+                      <th>Estado</th>
+                      <th>Email</th>
+                      <th>Teléfono</th>
                       <th>Tarjeta</th>
                       <th>Referencia</th>
                     </tr>
@@ -477,6 +491,66 @@
                     <input type="text" class="form-control" id="nombre">
                   </div>
                 </div>
+                
+                <div class="form-group">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" id="direccion">
+                  </div>
+                  <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad">
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-4">
+                          <label for="estado">Estado</label>
+                          <select id="estado" class="form-control">
+                              <option value="" selected>Seleccionar...</option>
+                              <option value="AGUASCALIENTES">Aguascalientes</option>
+                              <option value="BAJA CALIFORNIA">Baja California </option>
+                              <option value="BAJA CALIFORNIA SUR">Baja California Sur </option>
+                              <option value="CAMPECHE">Campeche </option>
+                              <option value="CHIAPAS">Chiapas </option>
+                              <option value="CHIHUAHUA">Chihuahua </option>
+                              <option value="COAHUILA">Coahuila </option>
+                              <option value="COLIMA">Colima </option>
+                              <option value="CDMX">CDMX</option>
+                              <option value="DURANGO">Durango </option>
+                              <option value="ESTADO DE MEXICO">Estado de México </option>
+                              <option value="GUANAJUATO">Guanajuato </option>
+                              <option value="GUERRERO">Guerrero </option>
+                              <option value="HIDALGO">Hidalgo </option>
+                              <option value="JALISCO">Jalisco </option>
+                              <option value="MICHOACAN">Michoacán </option>
+                              <option value="MORELOS">Morelos </option>
+                              <option value="NAYARIT">Nayarit </option>
+                              <option value="NUEVO LEON">Nuevo León </option>
+                              <option value="OAXACA">Oaxaca </option>
+                              <option value="PUEBLA">Puebla </option>
+                              <option value="QUERETARO">Querétaro </option>
+                              <option value="QUINTANA ROO">Quintana Roo </option>
+                              <option value="SAN LUIS POTOSI">San Luis Potosí </option>
+                              <option value="SINALOA">Sinaloa </option>
+                              <option value="SONORA">Sonora </option>
+                              <option value="TABASCO">Tabasco </option>
+                              <option value="TAMAULIPAS">Tamaulipas </option>
+                              <option value="TLAXCALA">Tlaxcala </option>
+                              <option value="VERACURZ">Veracruz </option>
+                              <option value="YUCATAN">Yucatán </option>
+                              <option value="ZACATECAS">Zacatecas</option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="telefono">Teléfono</label>
+                      <input type="text" class="form-control" id="telefono">
+                    </div>
+                  </div>
+                
                 <div class="form-group">
                   <label for="tarjeta">Tarjet de crédito</label>
                   <input type="text" class="form-control" id="tarjeta" placeholder="VISA/MASTER CARD">

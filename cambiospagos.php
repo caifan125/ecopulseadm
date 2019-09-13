@@ -105,11 +105,11 @@
       <!-- Nav Item - alta credito -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCreditos" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-cash-register"></i>
           <span>Créditos cliente</span></a>
           
-          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div id="collapseCreditos" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Operaciones céditos:</h6>
               <a class="collapse-item" href="altacredito.php">Alta crédito</a>
@@ -120,11 +120,11 @@
 
       <!-- Nav Item - pagos -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePagos" aria-expanded="true" aria-controls="collapseUtilities">
           <i class="fas fa-fw fa-cash-register"></i>
           <span>Pagos</span></a>
           
-          <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div id="collapsePagos" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Operaciones pagos:</h6>
               <a class="collapse-item" href="pagos.php">Registro pagos</a>
